@@ -1,11 +1,8 @@
+import Router from "./routes/Router";
 import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <h1 className="text-xs">React App</h1>
-    </div>
-  );
+  return <Router />;
 }
 
 export default App;
