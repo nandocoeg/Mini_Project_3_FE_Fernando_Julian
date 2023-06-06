@@ -2,6 +2,7 @@ import "./style.css";
 import React from "react";
 import { BsCameraReels } from "react-icons/bs";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
@@ -107,18 +108,7 @@ const Home = () => {
             <div>3</div>
           </div>
         </div>
-        <div className="footer">
-          <div className="grid grid-cols-4 gap-3 text-center">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-          </div>
-          <div className="grid grid-cols-2">
-            <div>1</div>
-            <div>2</div>
-          </div>
-        </div>
+        <Footer />
       </div>
     </div>
   );
