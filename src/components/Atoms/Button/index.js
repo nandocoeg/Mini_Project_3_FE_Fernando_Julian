@@ -1,6 +1,6 @@
 import React from "react";
 
-function Button() {
+export const Button = () => {
   return (
     <div>
       <div class="align-items m-20 text-center">
@@ -25,6 +25,4 @@ function Button() {
       </div>
     </div>
   );
-}
-
-export default Button;
+};

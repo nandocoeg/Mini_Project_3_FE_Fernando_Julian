@@ -1,8 +1,8 @@
 import "./style.css";
 import React from "react";
 import { BsCameraReels } from "react-icons/bs";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import Header from "../../components/Atoms/Header";
+import Footer from "../../components/Atoms/Footer";
 
 const Home = () => {
   return (

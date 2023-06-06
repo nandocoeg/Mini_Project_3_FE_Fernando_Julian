@@ -1,11 +1,20 @@
-import React from "react";
-import Header from "../../components/Header";
-import Banner from "../../components/Banner";
-import Search from "../../components/Search";
+import React, { useState } from "react";
+import Header from "../../components/Atoms/Header";
+import Banner from "../../components/Atoms/Banner";
+import Search from "../../components/Molecules/Search";
 
-function Movie() {
+const Movie = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleInputChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const handleSearch = () => {
+    console.log("Performing search with term:", searchTerm);
+  };
   return (
-    <div className="container">
+    <div className="container bg-black text-white">
       <Header />
       <div className="flex m-auto">
         <div className="relative">
@@ -16,12 +25,17 @@ function Movie() {
             Search Some Movies
           </h1>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <Search />
+            <Search
+              value={searchTerm}
+              onChange={handleInputChange}
+              onSearch={handleSearch}
+            />
           </div>
         </div>
       </div>
+      <div></div>
     </div>
   );
-}
+};
 
 export default Movie;
