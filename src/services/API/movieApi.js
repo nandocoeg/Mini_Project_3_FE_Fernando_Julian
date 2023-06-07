@@ -21,7 +21,7 @@ export const moviesApi = createApi({
     }),
     getSearchMovies: builder.query({
       query: (searchTerm) =>
-        `search/movie?api_key=${apiKey}&query=${searchTerm}`,
+        `search/movie?query=${searchTerm}&api_key=${apiKey}`,
     }),
   }),
 });

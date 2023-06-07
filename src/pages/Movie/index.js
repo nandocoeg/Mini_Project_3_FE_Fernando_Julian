@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "../../components/Atoms/Header";
 import Banner from "../../components/Atoms/Banner";
-import Search from "../../components/Molecules/Search";
+import { SearchForm } from "../../components/Molecules/Search";
 import PopularMovies from "../../components/Organism/PopularMovies";
 
 const Movie = () => {
@@ -28,10 +28,10 @@ const Movie = () => {
             Search Some Movies
           </h1>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <Search
-              onSearch={handleSearch}
+            <SearchForm
+              value={handleSearch}
               onChange={handleInputChange}
-              onClick={handleSearch}
+              onSubmit={handleSearch}
             />
           </div>
         </div>
