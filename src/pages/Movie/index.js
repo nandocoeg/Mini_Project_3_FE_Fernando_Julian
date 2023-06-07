@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../../components/Atoms/Header";
 import Banner from "../../components/Atoms/Banner";
 import Search from "../../components/Molecules/Search";
+import Card from "../../components/Atoms/Card";
 
 const Movie = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -33,7 +34,11 @@ const Movie = () => {
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="container">
+        <div className="flex justify-center items-center">
+          <Card />
+        </div>
+      </div>
     </div>
   );
 };

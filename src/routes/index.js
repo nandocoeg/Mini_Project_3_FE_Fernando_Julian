@@ -1,6 +1,7 @@
 import Home from "../pages/Home";
 import Movie from "../pages/Movie";
 import Notfound from "../pages/Notfound";
+import Card from "../components/Atoms/Card";
 
 const routes = [
   {
@@ -23,6 +24,10 @@ const routes = [
   {
     element: <Movie />,
     path: "/movie",
+  },
+  {
+    element: <Card />,
+    path: "/card",
   },
 ];
 
