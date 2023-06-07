@@ -10,13 +10,13 @@ const MovieCard = () => {
   if (error) return <p>Something went wrong</p>;
   return movies.results.map((movie) => {
     return (
-      <div>
+      <>
         <Card
           movieTitle={movie.title}
           movieSinopsys={movie.overview}
           moviePoster={movie.poster_path}
         />
-      </div>
+      </>
     );
   });
 };

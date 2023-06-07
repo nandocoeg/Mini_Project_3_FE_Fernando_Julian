@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "../../components/Atoms/Header";
 import Banner from "../../components/Atoms/Banner";
 import Search from "../../components/Molecules/Search";
-import MovieCard from "../../components/Molecules/MovieCard";
+import PopularMovies from "../../components/Organism/PopularMovies";
 
 const Movie = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -17,7 +17,7 @@ const Movie = () => {
   };
 
   return (
-    <div className="container bg-black text-white">
+    <div className=" bg-black text-white">
       <Header />
       <div className="flex m-auto">
         <div className="relative">
@@ -36,9 +36,12 @@ const Movie = () => {
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="flex justify-center items-center">
-          <MovieCard />
+      <div className="absolute bg-black">
+        <h1 className="text-4xl font-bold text-white text-center">
+          Popular Movies
+        </h1>
+        <div className="px-10 py-10 flex gap-10 flex-wrap justify-center">
+          <PopularMovies />
         </div>
       </div>
     </div>

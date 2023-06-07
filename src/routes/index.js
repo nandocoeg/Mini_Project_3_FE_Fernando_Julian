@@ -1,7 +1,6 @@
 import Home from "../pages/Home";
 import Movie from "../pages/Movie";
 import Notfound from "../pages/Notfound";
-import PopularMovies from "../components/Organism/PopularMovies";
 import MoviesPopular from "../components/Organism/MoviesPopular";
 
 const routes = [
@@ -20,10 +19,6 @@ const routes = [
   {
     element: <Movie />,
     path: "/movie",
-  },
-  {
-    element: <PopularMovies />,
-    path: "/popular",
   },
   {
     element: <MoviesPopular />,

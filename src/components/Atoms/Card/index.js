@@ -4,12 +4,12 @@ import { imageUrl } from "../../../services/API/api";
 
 const Card = ({ moviePoster, movieTitle, movieSinopsys }) => {
   return (
-    <div className="grid grid-cols-4 justify-center gap-8">
-      <div className="max-w-sm rounded overflow-hidden shadow-lg bg-slate-700 w-64 h-96 relative">
+    <div className="flex-wrap max-w-xs">
+      <div className="rounded overflow-hidden shadow-lg bg-slate-700 relative">
         <img
           src={`${imageUrl}${moviePoster}`}
           alt="Placeholder"
-          className="w-64 h-96"
+          className="w-full h-auto"
         />
         <div className="overlay absolute inset-0 bg-black opacity-0 hover:opacity-75 transition-opacity duration-300">
           <div className="px-6 py-8">
