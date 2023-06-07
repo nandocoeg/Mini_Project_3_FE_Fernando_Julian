@@ -2,18 +2,20 @@ import React, { useState } from "react";
 import Header from "../../components/Atoms/Header";
 import Banner from "../../components/Atoms/Banner";
 import Search from "../../components/Molecules/Search";
-import Card from "../../components/Atoms/Card";
+import MovieCard from "../../components/Molecules/MovieCard";
 
 const Movie = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const handleInputChange = (e) => {
-    setSearchTerm(e.target.value);
+  const handleSearch = () => {
+    console.log("handle search => ", searchTerm);
   };
 
-  const handleSearch = () => {
-    console.log("Performing search with term:", searchTerm);
+  const handleInputChange = (e) => {
+    setSearchTerm(e.target.value);
+    console.log("searchTerm:", searchTerm);
   };
+
   return (
     <div className="container bg-black text-white">
       <Header />
@@ -27,16 +29,16 @@ const Movie = () => {
           </h1>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <Search
-              value={searchTerm}
-              onChange={handleInputChange}
               onSearch={handleSearch}
+              onChange={handleInputChange}
+              onClick={handleSearch}
             />
           </div>
         </div>
       </div>
       <div className="container">
         <div className="flex justify-center items-center">
-          <Card />
+          <MovieCard />
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Input = ({ value, onChange }) => {
+export const Input = ({ value, onChange }) => {
   return (
     <input
       type="text"
@@ -11,5 +11,3 @@ const Input = ({ value, onChange }) => {
     />
   );
 };
-
-export default Input;

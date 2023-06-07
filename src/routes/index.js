@@ -1,7 +1,8 @@
 import Home from "../pages/Home";
 import Movie from "../pages/Movie";
 import Notfound from "../pages/Notfound";
-import Card from "../components/Atoms/Card";
+import PopularMovies from "../components/Organism/PopularMovies";
+import MoviesPopular from "../components/Organism/MoviesPopular";
 
 const routes = [
   {
@@ -12,11 +13,6 @@ const routes = [
     element: <Notfound />,
     path: "*",
   },
-  //   {
-  //     element: <Login />,
-  //     path: "/login",
-
-  //   },
   {
     element: <h1>Favourite</h1>,
     path: "/favourite",
@@ -26,8 +22,12 @@ const routes = [
     path: "/movie",
   },
   {
-    element: <Card />,
-    path: "/card",
+    element: <PopularMovies />,
+    path: "/popular",
+  },
+  {
+    element: <MoviesPopular />,
+    path: "/mpopular",
   },
 ];
 
