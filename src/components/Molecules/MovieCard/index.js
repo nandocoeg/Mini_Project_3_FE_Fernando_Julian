@@ -1,36 +1,24 @@
 import React from "react";
-import axios from "axios";
-import { useEffect, useState } from "react";
 import Card from "../../Atoms/Card";
-
-const apiKey = "8d30c281f32a0b36bcb32bba655bd73b";
-const baseUrl = "https://api.themoviedb.org/3";
-const imageUrl = "https://image.tmdb.org/t/p/w500";
-const Detail = "Detail";
+import { useGetPopularMoviesQuery } from "../../../services/API/movieApi";
 
 const MovieCard = () => {
-  const [movies, setMovies] = useState([]);
-  const [searchResults, setSearchResults] = useState([]);
+  const { data: movies, error, isLoading } = useGetPopularMoviesQuery();
+  console.log(movies);
 
-  useEffect(() => {
-    axios.get(`${baseUrl}/movie/popular?api_key=${apiKey}`).then((res) => {
-      setMovies(res.data.results);
-    });
-  }, []);
-
-  const handleSearch = (searchTerm) => {
-    axios
-      .get(`${baseUrl}/search/movie?api_key=${apiKey}&query=${searchTerm}`)
-      .then((res) => {
-        setSearchResults(res.data.results);
-      });
-  };
-
-  return (
-    <div>
-      <Card movies={movies} imageUrl={imageUrl} />
-    </div>
-  );
+  if (isLoading) return <p>Loading...</p>;
+  if (error) return <p>Something went wrong</p>;
+  return movies.results.map((movie) => {
+    return (
+      <div>
+        <Card
+          movieTitle={movie.title}
+          movieSinopsys={movie.overview}
+          moviePoster={movie.poster_path}
+        />
+      </div>
+    );
+  });
 };
 
 export default MovieCard;
