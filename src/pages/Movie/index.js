@@ -27,8 +27,8 @@ const Movie = () => {
         </div>
       </div>
       <div className="absolute bg-black">
-        <PopularMovies />
         {searchTerm && <SearchMovies searchTerm={searchTerm} />}
+        <PopularMovies />
       </div>
     </div>
   );
