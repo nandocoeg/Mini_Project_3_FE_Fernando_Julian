@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Disney Hotstar Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![](https://serving.photos.photobox.com/66857460b7c331d1703ab954a296c5a4a7dff19a36c2e102c03fb7bf21e73527e556196e.jpg)](http://serving.photos.photobox.com/66857460b7c331d1703ab954a296c5a4a7dff19a36c2e102c03fb7bf21e73527e556196e.jpg)
 
-## Available Scripts
+# Features
 
-In the project directory, you can run:
+- Search Movies
+- Popular Movies
+- Top Rated Movies
+- Detail Movies
+- Genre (soon)
+- Signup Login (soon)
+- Favourite (soon)
+- Watchlist (soon)
+- Give Rating to Movie (soon)
 
-### `npm start`
+# Tech
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React (Create React App)
+- HTML, CSS, Javascript
+- Tailwind CSS
+- React Router DOM
+- Redux Toolkit
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# API
 
-### `npm test`
+- https://api.themoviedb.org/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![](https://serving.photos.photobox.com/865642342c743021cde9357abd44ddeedfc0811b8da34c863fd5c695a59ef1e10bf9f4f6.jpg)](https://serving.photos.photobox.com/865642342c743021cde9357abd44ddeedfc0811b8da34c863fd5c695a59ef1e10bf9f4f6.jpg)
