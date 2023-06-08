@@ -2,6 +2,7 @@ import Home from "../pages/Home";
 import Movie from "../pages/Movie";
 import Notfound from "../pages/Notfound";
 import MoviesPopular from "../components/Organism/MoviesPopular";
+import MovieCard from "../components/Molecules/MovieCard";
 
 const routes = [
   {
@@ -21,7 +22,7 @@ const routes = [
     path: "/movie",
   },
   {
-    element: <MoviesPopular />,
+    element: <MovieCard />,
     path: "/mpopular",
   },
 ];

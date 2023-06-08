@@ -1,7 +1,5 @@
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import React from "react";
-import MovieCard from "../../Molecules/MovieCard";
 import { useGetSearchMoviesQuery } from "../../../services/API/movieApi";
 import Card from "../../Atoms/Card";
 
