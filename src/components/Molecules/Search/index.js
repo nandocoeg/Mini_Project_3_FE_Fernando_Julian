@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Input } from "../../Atoms/Input";
+import { BsSearch } from "react-icons/bs";
 
 export const SearchForm = ({ onSubmit }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -17,8 +18,14 @@ export const SearchForm = ({ onSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <Input value={searchTerm} onChange={handleSearch} />
-      <button type="submit">Search</button>
+      <div className="flex flex-row justify-center gap-4 items-center">
+        <Input value={searchTerm} onChange={handleSearch} />
+        <div className="text-xl font-black">
+          <button type="submit">
+            <BsSearch />
+          </button>
+        </div>
+      </div>
     </form>
   );
 };

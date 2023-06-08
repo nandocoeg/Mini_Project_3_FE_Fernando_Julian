@@ -5,6 +5,9 @@ import { SearchForm } from "../../components/Molecules/Search";
 import PopularMovies from "../../components/Organism/PopularMovies";
 import SearchMovies from "../../components/Organism/SearchMovies";
 import { DetailButton } from "../../components/Atoms/Button";
+import Footer from "../../components/Atoms/Footer";
+import GenreButton from "../../components/Molecules/Genre";
+import TopRatedMovies from "../../components/Organism/UpcomingMovies";
 
 const Movie = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -24,26 +27,15 @@ const Movie = () => {
             <div className="p-4">
               <SearchForm onSubmit={handleSearch} />
             </div>
-            <div className="grid grid-cols-4 p-4">
-              <button className="underline decoration-2 hover:text-blue-600 transition">
-                Action
-              </button>
-              <button className="underline decoration-2 hover:text-blue-600 transition">
-                Horror
-              </button>
-              <button className="underline decoration-2 hover:text-blue-600 transition">
-                Comedy
-              </button>
-              <button className="underline decoration-2 hover:text-blue-600 transition">
-                Drama
-              </button>
-            </div>
+            <GenreButton />
           </div>
         </div>
       </div>
       <div className="absolute bg-black">
         {searchTerm && <SearchMovies searchTerm={searchTerm} />}
-        <PopularMovies   />
+        <PopularMovies />
+        <TopRatedMovies />
+        <Footer />
       </div>
     </div>
   );

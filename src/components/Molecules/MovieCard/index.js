@@ -18,6 +18,8 @@ const MovieCard = () => {
           movieTitle={movie.title}
           movieSinopsys={movie.overview}
           moviePoster={movie.poster_path}
+          movieTrailer={movie.trailer}
+          moviePopularity={movie.popularity}
         />
       </>
     );

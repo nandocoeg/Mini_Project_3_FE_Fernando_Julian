@@ -1,24 +1,20 @@
-import "swiper/swiper.min.css";
 import React from "react";
-import { useGetSearchMoviesQuery } from "../../../services/API/movieApi";
 import Card from "../../Atoms/Card";
+import { useGetUpcomingMoviesQuery } from "../../../services/API/movieApi";
 
-const ShowGenre = ({ searchTerm }) => {
-  const {
-    data: movies,
-    error,
-    isLoading,
-  } = useGetSearchMoviesQuery(searchTerm);
+const TopRatedMovies = () => {
+  const { data: movies, error, isLoading } = useGetUpcomingMoviesQuery();
+  console.log(movies);
 
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>Something went wrong</p>;
 
-  const displayedMovies = movies.results.slice(0, 8);
+  const displayedMovies = movies.results.slice(0, 4);
 
   return (
     <>
       <h1 className="text-4xl font-bold text-white text-center">
-        Search Results
+        Top 4 Upcoming Movies
       </h1>
       <div className="px-10 py-10 flex gap-10 flex-wrap justify-center">
         {displayedMovies.map((movie) => (
@@ -34,4 +30,4 @@ const ShowGenre = ({ searchTerm }) => {
   );
 };
 
-export default ShowGenre;
+export default TopRatedMovies;

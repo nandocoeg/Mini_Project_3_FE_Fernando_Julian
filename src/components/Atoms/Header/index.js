@@ -16,25 +16,25 @@ function Header() {
           <li>
             <a
               href="#"
-              class="flex items-center gap-2 text-white hover:text-gray-300"
+              class="flex items-center gap-2 text-white hover:text-blue-500 transition"
             >
               <BsFillHouseFill />
               Home
             </a>
           </li>
           <li>
-            <a href="#" class="text-white hover:text-gray-300">
+            <a href="#" class="text-white hover:text-blue-500 transition">
+              Favourite
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-blue-500 transition">
+              Watchlist
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-blue-500 transition">
               About
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-white hover:text-gray-300">
-              Services
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-white hover:text-gray-300">
-              Contact
             </a>
           </li>
         </ul>

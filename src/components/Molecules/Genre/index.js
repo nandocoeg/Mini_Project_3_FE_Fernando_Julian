@@ -3,7 +3,7 @@ import React from "react";
 const GenreButton = () => {
   return (
     <div>
-      <div className="grid grid-cols-4 p-4">
+      <div id="genre" className="grid grid-cols-4 p-4">
         <button className="underline decoration-2 hover:text-blue-600 transition">
           Action
         </button>
