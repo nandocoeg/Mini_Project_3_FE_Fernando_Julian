@@ -1,17 +1,18 @@
+// SearchMoviesSection.js
 import React from "react";
 import MovieCard from "../../Molecules/MovieCard";
 
-const PopularMovies = () => {
+const SearchMovies = ({ searchTerm }) => {
   return (
     <div>
       <h1 className="text-4xl font-bold text-white text-center">
-        Popular Movies
+        Search Movies
       </h1>
       <div className="px-10 py-10 flex gap-10 flex-wrap justify-center">
-        <MovieCard />
+        <MovieCard searchTerm={searchTerm} />
       </div>
     </div>
   );
 };
 
-export default PopularMovies;
+export default SearchMovies;

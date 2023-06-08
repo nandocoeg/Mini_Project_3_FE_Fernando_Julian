@@ -1,15 +1,23 @@
 import React, { useState } from "react";
 import { Input } from "../../Atoms/Input";
 
-export const SearchForm = ({ value, onChange, onSubmit }) => {
+export const SearchForm = ({ onSubmit }) => {
+  const [searchTerm, setSearchTerm] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit();
+    console.log("Form submitted");
+    onSubmit(searchTerm);
+  };
+
+  const handleSearch = (e) => {
+    console.log("Search term:", searchTerm);
+    setSearchTerm(e.target.value);
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <Input value={value} onChange={onChange} />
+      <Input value={searchTerm} onChange={handleSearch} />
       <button type="submit">Search</button>
     </form>
   );
