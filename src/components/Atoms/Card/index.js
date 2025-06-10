@@ -70,6 +70,7 @@ const Card = ({
               <button
                 className="text-red-600 text-3xl"
                 onClick={handleToggleDetails}
+                aria-label="close-modal" // Added aria-label for accessibility and testing
               >
                 <BsX />
               </button>

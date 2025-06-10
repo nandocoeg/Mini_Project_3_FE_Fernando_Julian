@@ -7,12 +7,12 @@ export const SearchForm = ({ onSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted");
+    // console.log("Form submitted"); // Removed
     onSubmit(searchTerm);
   };
 
   const handleSearch = (e) => {
-    console.log("Search term:", searchTerm);
+    // console.log("Search term:", searchTerm); // Removed
     setSearchTerm(e.target.value);
   };
 

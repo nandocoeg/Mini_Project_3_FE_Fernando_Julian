@@ -4,7 +4,6 @@ import { useGetUpcomingMoviesQuery } from "../../../services/API/movieApi";
 
 const TopRatedMovies = () => {
   const { data: movies, error, isLoading } = useGetUpcomingMoviesQuery();
-  console.log(movies);
 
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>Something went wrong</p>;
